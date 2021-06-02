@@ -2,7 +2,7 @@ import { GIFEncoder } from "./GIFEncoder.js";
 
 const GIF = {
   // repeat n: times, 0: forever, -1: no-repeat(default)
-  encode(frames, delaymsec = 500, repeat = -1) {
+  encode(frames, delaymsec = 500, repeat = 0) {
     if (Array.isArray(frames)) {
       const encoder = new GIFEncoder(frames[0].width, frames[0].height);
       encoder.setRepeat(repeat); // 0 for repeat, -1 for no-repeat
