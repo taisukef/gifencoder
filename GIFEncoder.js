@@ -20,7 +20,7 @@ function ByteArray() {
 
 ByteArray.prototype.getData = function() {
   //return new Buffer.from(this.data);
-  return new Uint8ClampedArray(this.data);
+  return new Uint8Array(this.data);
 };
 
 ByteArray.prototype.writeByte = function(val) {
