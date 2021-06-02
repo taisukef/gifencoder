@@ -1,4 +1,4 @@
-# gifencoder
+# gifencoder ES module ver.
 
 animated (and non-animated) gif generation for browsers and Deno
 
