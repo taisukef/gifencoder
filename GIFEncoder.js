@@ -9,7 +9,7 @@
 */
 
 //var stream = require('stream');
-const stream = {};
+const stream = null; // not supported yet
 
 import { NeuQuant } from './TypedNeuQuant.js';
 import { LZWEncoder } from './LZWEncoder.js';
@@ -194,8 +194,7 @@ GIFEncoder.prototype.addFrame = function(imageData) {
   } else {
     this.image = imageData;
   }
-  console.log(this.image);
-
+  
   this.getImagePixels(); // convert to correct format if necessary
   this.analyzePixels(); // build color table & map pixels
 
