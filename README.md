@@ -5,11 +5,14 @@ animated (and non-animated) gif generation for browsers and Deno
 ## Usage
 
 ``` js
+import { GIF } from "https://taisukef.github.io/gifencoder/GIF.js";
+
+// prepare imagedata (RGBA)
 const [w, h] = [320, 240];
 const frames = [];
-frames.push(makePanel(w, h, [0xff, 0, 0, 0xff])); // RGBA
-frames.push(makePanel(w, h, [0x0, 0xff, 0, 0xff]));
-frames.push(makePanel(w, h, [0x0, 0, 0xff, 0xff]));
+frames.push(imagedata1);
+frames.push(imagedata2);
+frames.push(imagedata3);
 const gifbin = GIF.encode(frames, 500, 0);
 console.log(gifbin);
 ```
